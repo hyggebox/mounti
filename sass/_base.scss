@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-lt: #FF3366;
+    --color-primary-dk: #BA265D;
+
+    --color-grey-lt-1: #faf9f9;
+    --color-grey-lt-2: #f4f2f2;
+    --color-grey-lt-3: #f0eeee;
+    --color-grey-lt-4: #ccc;
+    --color-grey-dk-1: #333;
+    --color-grey-dk-2: #777;
+    --color-grey-dk-3: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dk-2);
+
+    background-image: linear-gradient(to right bottom, var(--color-primary-lt), var(--color-primary-dk));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
