@@ -2,7 +2,7 @@
 
 .logo {
     height: 3.25rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 //// SEARCH ///////////
@@ -23,7 +23,7 @@
         padding: .7rem 2rem;
         border-radius: 100px;
         width: 90%;
-        margin-right: -2.5rem;
+        margin-right: -3.2rem;
         transition: all .2s;
 
         &:focus {
@@ -65,17 +65,49 @@
 //// USER NAVIGATION ///////////
 
 .user-nav {
-    &__icon-box {
+    align-self: stretch;
 
+    display: flex;
+    align-items: center;
+
+    & > * { //all direct children
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey-lt-2);
+    }
+
+    &__icon-box {
+        position: relative;
     }
 
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
+        fill: var(--color-grey-dk-2);
     }
 
     &__notification {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
 
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__user {
@@ -84,11 +116,7 @@
 
     &__user-photo {
         height: 3.75rem;
-        width: 3.75rem;
         border-radius: 50%;
-    }
-
-    &__user-name {
-
+        margin-right: 1rem;
     }
 }
