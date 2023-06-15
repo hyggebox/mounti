@@ -2,7 +2,7 @@
     --color-primary: #eb2f64;
     --color-primary-lt: #FF3366;
     --color-primary-dk: #BA265D;
-
+    --color-white: #fff;
     --color-grey-lt-1: #faf9f9;
     --color-grey-lt-2: #f4f2f2;
     --color-grey-lt-3: #f0eeee;
@@ -10,6 +10,8 @@
     --color-grey-dk-1: #333;
     --color-grey-dk-2: #777;
     --color-grey-dk-3: #999;
+
+    --shadow-1: 0 2 rem 6 rem rgba(0,0,0,.3);
 }
 
 * {
