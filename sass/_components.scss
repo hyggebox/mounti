@@ -14,6 +14,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $breakpoint-xsm) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-lt-2);
+    }
+
     &__input {
         font-family: inherit;
         font-size: inherit;
@@ -188,6 +194,12 @@
             justify-content: center;
             padding: 1.5rem;
         }
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            padding: 1rem .5rem;
+        }
+        
     }
 
     &__icon {
@@ -195,6 +207,13 @@
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            margin-right: 0;
+            margin-bottom: .2rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 
@@ -238,6 +257,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
     }
 
     &__stars {
@@ -276,17 +300,30 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            padding: 0 1.2rem;
+            margin-left: 1rem;
+        }
     }
 
     &__rating-average {
         font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            font-size: 1.8rem;
+        }
     }
 
     &__rating-count {
         font-size: .8rem;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            font-size: .5rem;
+        }
     }
 }
 
@@ -412,6 +449,10 @@
     @media only screen and (max-width: $breakpoint-md) {
         padding: 2rem;
         margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 2rem;
     }
 
     &__text {

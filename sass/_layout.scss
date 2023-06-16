@@ -16,12 +16,17 @@
     height: 7rem;
     background-color: var(--color-white);
     border-bottom: var(--line);
+    font-size: 1.4rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    font-size: 1.4rem;
+    @media only screen and (max-width: $breakpoint-xsm) {
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 11rem;
+    }
 }
 
 .content {
@@ -56,6 +61,10 @@
     @media only screen and (max-width: $breakpoint-md) {
         padding: 2rem;
     }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -69,6 +78,11 @@
     @media only screen and (max-width: $breakpoint-md) {
         padding: 2rem;
         margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        margin-right: 0;
+        margin-bottom: 2rem;
     }
 }
 
