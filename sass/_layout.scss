@@ -38,6 +38,7 @@
 }
 
 .detail {
+    font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
     background-color: var(--color-grey-lt-1);
@@ -49,13 +50,12 @@
     box-shadow: var(--shadow-2);
     padding: 3rem;
     margin-right: 4.5rem;
-    font-size: 1.4rem;
 
     flex: 0 0 60%;
 }
 
 .user-reviews {
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-2);
+    // background-color: var(--color-white);
+    // box-shadow: var(--shadow-2);
     flex: 1;
 }
