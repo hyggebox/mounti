@@ -17,6 +17,10 @@
     --line: 1px solid var(--color-grey-lt-2);
 }
 
+$breakpoint-xlg: 75em;    // 1200px
+$breakpoint-lg: 68.75em;  // 1100px
+$breakpoint-md: 56.25em;  // 900px
+
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +35,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+        font-size: 50%;
+    }
 }
 
 body {

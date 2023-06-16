@@ -125,11 +125,24 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $breakpoint-md) {
+        display: flex;
+        margin-top: 0;
+    }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @media only screen and (max-width: $breakpoint-md) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media only screen and (max-width: $breakpoint-md) {
+            flex: 1;
         }
     }
 
@@ -170,6 +183,11 @@
 
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            justify-content: center;
+            padding: 1.5rem;
+        }
     }
 
     &__icon {
@@ -188,6 +206,10 @@
     color: var(--color-grey-lt-4);
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        display: none;
+    }
 }
 
 
@@ -355,6 +377,10 @@
     display: flex;
     align-items: center;
 
+    &__friends {
+        display: flex;
+    }
+
     &__photo {
         box-sizing: content-box;
         height: 4rem;
@@ -363,7 +389,7 @@
         border: 3px solid var(--color-white);
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 
@@ -373,7 +399,7 @@
 }
 
 
-//// RECOMMEND ///////////
+//// REVIEWS ///////////
 
 .review {
     position: relative;
@@ -382,6 +408,11 @@
     padding: 3rem;
     margin-bottom: 3.5rem;
     overflow: hidden;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
 
     &__text {
         position: relative;
@@ -443,12 +474,19 @@
     padding: 3.5rem 0;
     text-align: center;
 
+    @media only screen and (max-width: $breakpoint-md) {
+        padding: 2.5rem 0;
+    }
+
     &__book-now {
         font-size: 1.5rem;
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 3rem;
 
+        @media only screen and (max-width: $breakpoint-md) {
+            margin-bottom: 2rem;
+        }
     }
 }
 

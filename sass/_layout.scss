@@ -4,7 +4,12 @@
     background-color: var(--color-grey-lt-2);
     box-shadow: var(--shadow-1);
 
-    min-height: 50rem;
+    @media only screen and (max-width: $breakpoint-xlg) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+
+    }
 }
 
 .header {
@@ -21,6 +26,10 @@
 
 .content {
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -43,6 +52,10 @@
     padding: 4.5rem;
     background-color: var(--color-grey-lt-1);
     border-bottom: var(--line);
+
+    @media only screen and (max-width: $breakpoint-md) {
+        padding: 2rem;
+    }
 }
 
 .description {
@@ -52,6 +65,11 @@
     margin-right: 4.5rem;
 
     flex: 0 0 60%;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        padding: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 .user-reviews {
