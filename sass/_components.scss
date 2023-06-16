@@ -302,25 +302,6 @@
     }
 }
 
-@keyframes pulsate {
-    0% {
-        transform: scale(1);
-        box-shadow: none;
-    }
-
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: none;
-    }
-    
-}
-
-
 //// PARAGRAPH ///////////
 
 .paragraph:not(:last-of-type) {
@@ -453,4 +434,100 @@
         font-family: sans-serif;
         z-index: 1;
     }
+}
+
+
+//// CTA SECTION ///////////
+
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+
+    }
+}
+
+
+//// BUTTON ///////////
+
+.btn {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 100px;
+    background-image: linear-gradient(to right,
+                                    var(--color-primary),
+                                    var(--color-primary-dk)
+                    );
+    color: var(--color-white);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s;
+
+    & > * {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        transition: all .25s ease-in-out;
+    }
+
+    &__visible {
+        padding: 2rem 7.5rem;
+    }
+
+    &__invisible {
+        position: absolute;
+        left: 0;
+        top: -100%;
+        padding: 2rem 0;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left,
+                                    var(--color-primary),
+                                    var(--color-primary-dk)
+                    );
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible {
+        top: 0;
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+}
+
+
+
+//// ANIMATION ///////////
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    
 }
