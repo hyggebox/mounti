@@ -110,9 +110,6 @@
         align-items: center;
     }
 
-    &__user {
-
-    }
 
     &__user-photo {
         height: 3.75rem;
@@ -199,10 +196,6 @@
 .gallery {
     display: flex;
 
-    &__item {
-
-    }
-
     &__photo {
         display: block;
         width: 100%;
@@ -275,6 +268,9 @@
     }
 }
 
+
+//// INLINE BUTTON ///////////
+
 .btn-inline {
     display: inline-block;
     padding-bottom: 2px;
@@ -283,11 +279,21 @@
     background-color: transparent;
     color: var(--color-primary);
     font-size: inherit;
+    font-family: inherit;
     cursor: pointer;
     transition: all .2s;
+
+    & span {
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
     
     &:hover {
         color: var(--color-grey-dk-1);
+
+        & span {
+            margin-left: 6px;
+        }
     }
 
     &:focus {
@@ -382,10 +388,6 @@
 
     &__count {
         margin-right: auto;
-    }
-
-    &__friends {
-
     }
 }
 
