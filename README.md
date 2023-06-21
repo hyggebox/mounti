@@ -8,7 +8,10 @@
 
 Для страницы применена адаптивная верстка для различных размеров экрана — контрольные точки (брейкпоинты): 1200px, 1100px, 900px, 600px, 460px.
 
+Посмотреть страницу > [hyggebox.github.io/mounti/](https://hyggebox.github.io/mounti/)
+
 ![mouti](https://github.com/hyggebox/mounti/assets/80201470/429fc6f7-f500-4a68-9296-424e531b3332)
+
 
 
 ## Запуск и установка 
